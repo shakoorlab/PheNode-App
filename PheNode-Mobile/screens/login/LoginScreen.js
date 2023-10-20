@@ -21,7 +21,7 @@ export default function LoginScreen() {
       />
 
       {/* title and form */}
-      <View className="h-full w-full flex justify-around pt-48">
+      <View className="h-full w-full flex justify-around pt-40 pb-10">
         {/* title */}
         <View className="flex items-center">
           <Animated.View entering={FadeInUp.duration(1000).springify()}>
