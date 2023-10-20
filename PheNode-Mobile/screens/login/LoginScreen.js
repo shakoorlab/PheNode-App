@@ -3,6 +3,10 @@ import React from "react";
 import { StatusBar } from "expo-status-bar";
 import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
 import { useNavigation } from "@react-navigation/native";
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from "react-native-responsive-screen";
 
 export default function LoginScreen() {
   const navigation = useNavigation();
@@ -17,15 +21,19 @@ export default function LoginScreen() {
       />
 
       {/* title and form */}
-      <View className="h-full w-full flex justify-around pt-40 pb-10">
+      <View className="h-full w-full flex justify-around pt-48">
         {/* title */}
         <View className="flex items-center">
-          <Animated.Text
-            className="text-white font-bold tracking-wider text-5xl"
-            entering={FadeInUp.duration(1000).springify()}
-          >
-            Login
-          </Animated.Text>
+          <Animated.View entering={FadeInUp.duration(1000).springify()}>
+            <Image
+              source={require("../../assets/images/phenode.png")}
+              style={{
+                width: wp("80%"), // 50% of screen width
+                height: wp("50%"), // 50% of screen width, for a square logo
+                resizeMode: "contain",
+              }}
+            />
+          </Animated.View>
         </View>
 
         {/* form */}
