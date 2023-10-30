@@ -7,6 +7,7 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
+// import PhenodeSVG from "../../assets/images/phenode.svg";
 
 export default function LoginScreen() {
   const navigation = useNavigation();
@@ -26,10 +27,10 @@ export default function LoginScreen() {
         <View className="flex items-center">
           <Animated.View entering={FadeInUp.duration(1000).springify()}>
             <Image
-              source={require("../../assets/images/phenode.png")}
+              source={require("../../assets/images/phenode_logo.png")}
               style={{
-                width: wp("80%"), // 50% of screen width
-                height: wp("50%"), // 50% of screen width, for a square logo
+                width: wp("80%"),
+                height: wp("50%"),
                 resizeMode: "contain",
               }}
             />
