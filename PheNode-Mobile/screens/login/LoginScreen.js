@@ -11,6 +11,7 @@ import {
 
 export default function LoginScreen() {
   const navigation = useNavigation();
+
   return (
     <View className="bg-white h-full w-full">
       <StatusBar style="light" />
@@ -61,6 +62,7 @@ export default function LoginScreen() {
             <TouchableOpacity
               className="border border-orange-custom w-full bg-transparent p-3 rounded-2xl mb-3"
               entering={FadeInDown.delay(400).duration(1000).springify()}
+              onPress={() => navigation.push("LandingPage")}
             >
               <Text className="text-xl font-bold text-cyan-custom text-center">
                 Login
