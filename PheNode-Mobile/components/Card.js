@@ -115,6 +115,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginTop: 2,
     fontSize: wp("3%"),
+    // Shadow properties for iOS
+    shadowColor: "#48f7f5",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.4,
+    shadowRadius: 4,
+    // Shadow properties for Android
+    elevation: 5,
   },
   divider: {
     width: 1,
