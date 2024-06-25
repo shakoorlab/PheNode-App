@@ -9,10 +9,10 @@ const Header = () => {
       <Text style={styles.title}>PheNodes</Text>
       <View style={styles.bubbles}>
         <TouchableOpacity style={styles.searchBubble}>
-          <Ionicons name="search" size={20} color="#1A75E8" />
+          <Ionicons name="search" size={20} color="#FFF" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.searchBubble}>
-          <Ionicons name="person-outline" size={20} color="#1A75E8" />
+          <Ionicons name="person-outline" size={20} color="#FFF" />
         </TouchableOpacity>
       </View>
     </View>
